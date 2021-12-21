@@ -4,7 +4,7 @@
 
 package com.parkingwang.version.wave;
 
-import android.support.v4.app.FragmentActivity;
+import androidx.fragment.app.FragmentActivity;
 
 import com.parkingwang.version.NextVersion;
 import com.parkingwang.version.Version;

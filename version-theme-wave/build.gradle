@@ -1,16 +1,16 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
 
     defaultConfig {
         minSdkVersion 15
-        targetSdkVersion 25
-        versionCode 10400
-        versionName "1.4.0"
+        targetSdkVersion 28
+        versionCode 2
+        versionName "1.4.3"
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
 
     }
     buildTypes {
@@ -25,10 +25,7 @@ android {
 }
 
 dependencies {
-    compile project(':version')
+    implementation project(':version')
 }
 
-//// Publication config
-if (hasProperty('SONATYPE_RELEASE_URL') || hasProperty('LOCAL_RELEASE_URL')) {
-    apply from: '../maven.gradle'
-}
+apply from: '../maven.gradle'
