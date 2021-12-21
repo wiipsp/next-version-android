@@ -1,3 +1,7 @@
+[![](https://jitpack.io/v/wiipsp/next-version-android.svg)](https://jitpack.io/#wiipsp/next-version-android)
+
+The Original repository is closed. Just change it to jitpack.
+
 # NextVersion
 
 NextVersion是一个用于Android App检查自动更新的Library。
@@ -6,11 +10,11 @@ NextVersion是一个用于Android App检查自动更新的Library。
 
 ## 使用说明
 
-#### 1. 添加Nexus依赖：
+#### 1. 添加jitpack依赖：
 
 ```gradle
 repositories {
-    maven { url 'https://dl.bintray.com/parkingwang/maven' }
+    maven { url "https://jitpack.io" }
 }
 ```
 
@@ -21,12 +25,12 @@ NextVersion 项目分为多个子模块。包括核心模块和UI扩展模块：
 > VERSION= 1.0.2
 
 ```gradle
-compile 'com.parkingwang:version:{VERSION}'
-compile 'com.parkingwang:version-theme-wave:{VERSION}'
-compile 'com.parkingwang:version-theme-rocket:{VERSION}'
-compile 'com.parkingwang:version-theme-check:{VERSION}'
-compile 'com.parkingwang:version-source-fir:{VERSION}'
-compile 'com.parkingwang:version-source-pkw:{VERSION}'
+implementation 'com.github.wiipsp.next-version-android:version:{VERSION}'
+implementation 'com.github.wiipsp.next-version-android:version-theme-wave:{VERSION}'
+implementation 'com.github.wiipsp.next-version-android:version-theme-rocket:{VERSION}'
+implementation 'com.github.wiipsp.next-version-android:version-theme-check:{VERSION}'
+implementation 'com.github.wiipsp.next-version-android:version-source-fir:{VERSION}'
+implementation 'com.github.wiipsp.next-version-android:version-source-pkw:{VERSION}'
 ```
 
 当前库支持以下三种提示框Theme样式：
